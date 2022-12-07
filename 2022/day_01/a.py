@@ -1,5 +1,5 @@
 
-f = open("./day_1_input", "r")
+f = open("./input", "r")
 max_calories = 0
 
 current = 0

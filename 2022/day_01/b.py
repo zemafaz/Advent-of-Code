@@ -1,6 +1,6 @@
 import heapq
 
-f = open("./day_1_input", "r")
+f = open("./input", "r")
 max_calories = [0,0,0]
 heapq.heapify(max_calories)
 current = 0
