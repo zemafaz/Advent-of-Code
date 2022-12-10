@@ -39,7 +39,7 @@ if __name__ == "__main__":
     if res != output:
         print(f"\nDid not pass test:\n\tExpected {output}, returned {res}")
     else:
-        print("Passed test!")
+        print("\nPassed test!")
 
     res = solution("./input")
     print(f"\nSolution for input: {res}")
