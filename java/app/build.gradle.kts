@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("advent_of_code.App")
+    mainClass.set("year2015.Day02IWasToldThereWouldBeNoMath")
 }
 
 tasks.named<Test>("test") {
