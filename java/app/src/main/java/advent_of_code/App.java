@@ -4,12 +4,21 @@
 package advent_of_code;
 
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URISyntaxException;
+
+import year2024.Day01HistorianHysteria;
 
 public class App {
 
-    public static void main(String[] args) throws URISyntaxException {
-        File test = new File(ClassLoader.getSystemResource("201501_input").toURI());
-        System.out.println(test.exists());
+    public static void main(String[] args) throws URISyntaxException, IOException {
+        FileReader input = new FileReader(ClassLoader.getSystemResource("202401_input").getPath());
+
+        Integer result = Day01HistorianHysteria.part2(input);
+        
+        System.out.println(String.format("The result is %d", result));
+        
+        input.close();
     }
 }

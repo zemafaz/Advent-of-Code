@@ -34,10 +34,15 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("year2015.Day02IWasToldThereWouldBeNoMath")
+    mainClass.set("advent_of_code.App")
 }
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL // Detailed exception output
+        showStandardStreams = true // Show standard output in terminal
+    }
 }
